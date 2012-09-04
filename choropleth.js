@@ -34,5 +34,5 @@ d3.json("unemployment.json", function(json) {
 });
 
 function quantize(d) {
-  return "q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9";
+  return "q" + (Math.min(8, ~~(data[d.id] * 9 / 12))) + "-9";
 }
